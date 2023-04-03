@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		658D550229DA817200E9C242 /* SlopeConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D550129DA817200E9C242 /* SlopeConnectionViewController.m */; };
+		658D550529DB398800E9C242 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550429DB398800E9C242 /* CropViewController */; };
+		658D550729DB398800E9C242 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550629DB398800E9C242 /* TOCropViewController */; };
+		658D550A29DB39A600E9C242 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550929DB39A600E9C242 /* GoogleSignIn */; };
+		658D550C29DB39A700E9C242 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550B29DB39A700E9C242 /* GoogleSignInSwift */; };
+		658D550F29DB3AFA00E9C242 /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550E29DB3AFA00E9C242 /* AWSClientRuntime */; };
+		658D551129DB3AFA00E9C242 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 658D551029DB3AFA00E9C242 /* AWSDynamoDB */; };
+		658D551329DB3AFA00E9C242 /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 658D551229DB3AFA00E9C242 /* AWSS3 */; };
+		658D551A29DB446D00E9C242 /* S3Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D551929DB446D00E9C242 /* S3Utils.m */; };
+		65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3EC129D947B000B81186 /* AppDelegate.m */; };
+		65DE3EC529D947B000B81186 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3EC429D947B000B81186 /* SceneDelegate.m */; };
+		65DE3EC829D947B000B81186 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3EC729D947B000B81186 /* ViewController.m */; };
+		65DE3ECB29D947B000B81186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DE3EC929D947B000B81186 /* Main.storyboard */; };
+		65DE3ECD29D947B100B81186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DE3ECC29D947B100B81186 /* Assets.xcassets */; };
+		65DE3ED029D947B100B81186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DE3ECE29D947B100B81186 /* LaunchScreen.storyboard */; };
+		65DE3ED329D947B100B81186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3ED229D947B100B81186 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		658D550029DA817200E9C242 /* SlopeConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlopeConnectionViewController.h; sourceTree = "<group>"; };
+		658D550129DA817200E9C242 /* SlopeConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlopeConnectionViewController.m; sourceTree = "<group>"; };
+		658D551829DB443500E9C242 /* S3Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Utils.h; sourceTree = "<group>"; };
+		658D551929DB446D00E9C242 /* S3Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = S3Utils.m; sourceTree = "<group>"; };
+		65DE3EBD29D947B000B81186 /* Mountain-UI-Companion-ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mountain-UI-Companion-ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DE3EC029D947B000B81186 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65DE3EC129D947B000B81186 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		65DE3EC329D947B000B81186 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		65DE3EC429D947B000B81186 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		65DE3EC629D947B000B81186 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		65DE3EC729D947B000B81186 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		65DE3ECA29D947B000B81186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65DE3ECC29D947B100B81186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65DE3ECF29D947B100B81186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65DE3ED129D947B100B81186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DE3ED229D947B100B81186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65DE3EBA29D947B000B81186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658D551329DB3AFA00E9C242 /* AWSS3 in Frameworks */,
+				658D550729DB398800E9C242 /* TOCropViewController in Frameworks */,
+				658D550529DB398800E9C242 /* CropViewController in Frameworks */,
+				658D550F29DB3AFA00E9C242 /* AWSClientRuntime in Frameworks */,
+				658D550A29DB39A600E9C242 /* GoogleSignIn in Frameworks */,
+				658D551129DB3AFA00E9C242 /* AWSDynamoDB in Frameworks */,
+				658D550C29DB39A700E9C242 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		658D551429DB3B1A00E9C242 /* SlopeConnection */ = {
+			isa = PBXGroup;
+			children = (
+				658D550029DA817200E9C242 /* SlopeConnectionViewController.h */,
+				658D550129DA817200E9C242 /* SlopeConnectionViewController.m */,
+				658D551829DB443500E9C242 /* S3Utils.h */,
+				658D551929DB446D00E9C242 /* S3Utils.m */,
+			);
+			path = SlopeConnection;
+			sourceTree = "<group>";
+		};
+		65DE3EB429D947B000B81186 = {
+			isa = PBXGroup;
+			children = (
+				65DE3EBF29D947B000B81186 /* Mountain-UI-Companion-ObjC */,
+				65DE3EBE29D947B000B81186 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65DE3EBE29D947B000B81186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65DE3EBD29D947B000B81186 /* Mountain-UI-Companion-ObjC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65DE3EBF29D947B000B81186 /* Mountain-UI-Companion-ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				65DE3EC029D947B000B81186 /* AppDelegate.h */,
+				65DE3EC129D947B000B81186 /* AppDelegate.m */,
+				65DE3EC329D947B000B81186 /* SceneDelegate.h */,
+				65DE3EC429D947B000B81186 /* SceneDelegate.m */,
+				65DE3EC629D947B000B81186 /* ViewController.h */,
+				65DE3EC729D947B000B81186 /* ViewController.m */,
+				65DE3EC929D947B000B81186 /* Main.storyboard */,
+				658D551429DB3B1A00E9C242 /* SlopeConnection */,
+				65DE3ECC29D947B100B81186 /* Assets.xcassets */,
+				65DE3ECE29D947B100B81186 /* LaunchScreen.storyboard */,
+				65DE3ED129D947B100B81186 /* Info.plist */,
+				65DE3ED229D947B100B81186 /* main.m */,
+			);
+			path = "Mountain-UI-Companion-ObjC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65DE3EBC29D947B000B81186 /* Mountain-UI-Companion-ObjC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DE3ED629D947B100B81186 /* Build configuration list for PBXNativeTarget "Mountain-UI-Companion-ObjC" */;
+			buildPhases = (
+				65DE3EB929D947B000B81186 /* Sources */,
+				65DE3EBA29D947B000B81186 /* Frameworks */,
+				65DE3EBB29D947B000B81186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mountain-UI-Companion-ObjC";
+			packageProductDependencies = (
+				658D550429DB398800E9C242 /* CropViewController */,
+				658D550629DB398800E9C242 /* TOCropViewController */,
+				658D550929DB39A600E9C242 /* GoogleSignIn */,
+				658D550B29DB39A700E9C242 /* GoogleSignInSwift */,
+				658D550E29DB3AFA00E9C242 /* AWSClientRuntime */,
+				658D551029DB3AFA00E9C242 /* AWSDynamoDB */,
+				658D551229DB3AFA00E9C242 /* AWSS3 */,
+			);
+			productName = "Mountain-UI-Companion-ObjC";
+			productReference = 65DE3EBD29D947B000B81186 /* Mountain-UI-Companion-ObjC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65DE3EB529D947B000B81186 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					65DE3EBC29D947B000B81186 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 65DE3EB829D947B000B81186 /* Build configuration list for PBXProject "Mountain-UI-Companion-ObjC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65DE3EB429D947B000B81186;
+			packageReferences = (
+				658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
+				658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */,
+			);
+			productRefGroup = 65DE3EBE29D947B000B81186 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65DE3EBC29D947B000B81186 /* Mountain-UI-Companion-ObjC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65DE3EBB29D947B000B81186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DE3ED029D947B100B81186 /* LaunchScreen.storyboard in Resources */,
+				65DE3ECD29D947B100B81186 /* Assets.xcassets in Resources */,
+				65DE3ECB29D947B000B81186 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65DE3EB929D947B000B81186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658D550229DA817200E9C242 /* SlopeConnectionViewController.m in Sources */,
+				658D551A29DB446D00E9C242 /* S3Utils.m in Sources */,
+				65DE3EC829D947B000B81186 /* ViewController.m in Sources */,
+				65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */,
+				65DE3ED329D947B100B81186 /* main.m in Sources */,
+				65DE3EC529D947B000B81186 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65DE3EC929D947B000B81186 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DE3ECA29D947B000B81186 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65DE3ECE29D947B100B81186 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65DE3ECF29D947B100B81186 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65DE3ED429D947B100B81186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		65DE3ED529D947B100B81186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65DE3ED729D947B100B81186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T5V587BPQM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mountain-UI-Companion-ObjC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewfernst.Mountain-UI-Companion-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		65DE3ED829D947B100B81186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = T5V587BPQM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mountain-UI-Companion-ObjC/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.matthewfernst.Mountain-UI-Companion-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65DE3EB829D947B000B81186 /* Build configuration list for PBXProject "Mountain-UI-Companion-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DE3ED429D947B100B81186 /* Debug */,
+				65DE3ED529D947B100B81186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DE3ED629D947B100B81186 /* Build configuration list for PBXNativeTarget "Mountain-UI-Companion-ObjC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DE3ED729D947B100B81186 /* Debug */,
+				65DE3ED829D947B100B81186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/awslabs/aws-sdk-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		658D550429DB398800E9C242 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
+		658D550629DB398800E9C242 /* TOCropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = TOCropViewController;
+		};
+		658D550929DB39A600E9C242 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		658D550B29DB39A700E9C242 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		658D550E29DB3AFA00E9C242 /* AWSClientRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSClientRuntime;
+		};
+		658D551029DB3AFA00E9C242 /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSDynamoDB;
+		};
+		658D551229DB3AFA00E9C242 /* AWSS3 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
+			productName = AWSS3;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 65DE3EB529D947B000B81186 /* Project object */;
+}

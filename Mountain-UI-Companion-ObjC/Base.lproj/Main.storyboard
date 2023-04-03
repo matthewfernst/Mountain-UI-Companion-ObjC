@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Srd-Cv-tBr">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LogBook-->
+        <scene sceneID="ztP-5X-Nrq">
+            <objects>
+                <viewController id="fAb-Wd-I8a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3zA-T4-as4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fQ5-8V-acS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="LogBook" image="book.closed.fill" catalog="system" id="bu9-yI-g6X"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4l9-3B-yG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="315"/>
+        </scene>
+        <!--Account-->
+        <scene sceneID="kW1-YT-5hQ">
+            <objects>
+                <viewController id="MpB-qr-OqI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fVT-SD-pgg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hgb-Ux-J49"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="HhC-NC-FgD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1a-dB-fhO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="315"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="lTZ-yg-KIJ">
+            <objects>
+                <viewController id="Uwa-md-NZT" customClass="SlopeConnectionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ftp-7I-GN5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to Slopes Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoK-T6-m94">
+                                <rect key="frame" x="74.666666666666671" y="93" width="243.66666666666663" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-oH-1Z6">
+                                <rect key="frame" x="16" y="132" width="361" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">The Mountain-UI Companion App works together with the Slopes App by Breakpoint Studios. Slopes is able to track a skier or snowboarder while they shred it down the mountain. Slopes can track things such as average speed, total vertical feet, and more. The Mountain-UI Companion App, uses the data stored by Slopes and sends it to your Mountain-UI display. In order to get started, tap the "Connect Slopes" button and select the Slopes folder in your Files directory. The Slopes directory is shown below for reference.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Any-xC-xMh">
+                                <rect key="frame" x="124" y="662" width="145" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Connect Slopes"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="slopesFolder" translatesAutoresizingMaskIntoConstraints="NO" id="zOp-xs-2fi">
+                                <rect key="frame" x="124" y="421" width="154" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="dlg-WI-7df"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tYe-qY-bZa">
+                                <rect key="frame" x="126" y="476" width="150" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1bM-Gh-tI4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="T5v-oH-1Z6" firstAttribute="centerX" secondItem="1bM-Gh-tI4" secondAttribute="centerX" id="1r8-NM-S4r"/>
+                            <constraint firstItem="Any-xC-xMh" firstAttribute="centerX" secondItem="1bM-Gh-tI4" secondAttribute="centerX" id="7GK-LR-l5c"/>
+                            <constraint firstItem="T5v-oH-1Z6" firstAttribute="leading" secondItem="Ftp-7I-GN5" secondAttribute="leadingMargin" id="L6H-Gc-DeE"/>
+                            <constraint firstItem="T5v-oH-1Z6" firstAttribute="firstBaseline" secondItem="MoK-T6-m94" secondAttribute="baseline" constant="20" symbolType="layoutAnchor" id="LUP-KC-n0E"/>
+                            <constraint firstItem="zOp-xs-2fi" firstAttribute="leading" secondItem="1bM-Gh-tI4" secondAttribute="leading" constant="124" id="OVc-Ax-XvX"/>
+                            <constraint firstItem="MoK-T6-m94" firstAttribute="top" secondItem="1bM-Gh-tI4" secondAttribute="top" constant="34" id="X39-ZB-G8X"/>
+                            <constraint firstItem="1bM-Gh-tI4" firstAttribute="trailing" secondItem="zOp-xs-2fi" secondAttribute="trailing" constant="115" id="kPk-V9-aqc"/>
+                            <constraint firstItem="1bM-Gh-tI4" firstAttribute="bottom" secondItem="T5v-oH-1Z6" secondAttribute="bottom" constant="457" id="loP-cX-t6O"/>
+                            <constraint firstItem="1bM-Gh-tI4" firstAttribute="bottom" secondItem="Any-xC-xMh" secondAttribute="bottom" constant="72" id="oq7-RD-3hC"/>
+                            <constraint firstItem="MoK-T6-m94" firstAttribute="centerX" secondItem="1bM-Gh-tI4" secondAttribute="centerX" id="paT-6m-76p"/>
+                            <constraint firstItem="zOp-xs-2fi" firstAttribute="top" secondItem="Ftp-7I-GN5" secondAttribute="top" constant="421" id="vkI-Cw-tGs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Connect" image="powerplug.fill" catalog="system" id="BJr-oR-YPL"/>
+                    <connections>
+                        <outlet property="connectSlopesButton" destination="Any-xC-xMh" id="dFy-DZ-NgA"/>
+                        <outlet property="explanationTextView" destination="T5v-oH-1Z6" id="a0d-wX-32y"/>
+                        <outlet property="explanationTitleLabel" destination="MoK-T6-m94" id="dmC-wX-5Sf"/>
+                        <outlet property="slopeFilesUploadProgressView" destination="tYe-qY-bZa" id="cMk-Nq-FD7"/>
+                        <outlet property="slopesFolderImageView" destination="zOp-xs-2fi" id="5te-f0-RBY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMT-eg-0S6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1332.06106870229" y="314.78873239436621"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Pd6-Nu-hsZ">
+            <objects>
+                <tabBarController id="Srd-Cv-tBr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tus-af-Ipq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <tabBarAppearance key="scrollEdgeAppearance"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Uwa-md-NZT" kind="relationship" relationship="viewControllers" id="jQr-7W-VbK"/>
+                        <segue destination="fAb-Wd-I8a" kind="relationship" relationship="viewControllers" id="Sh2-pv-qeO"/>
+                        <segue destination="MpB-qr-OqI" kind="relationship" relationship="viewControllers" id="K8e-dF-BOU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wra-Zu-AyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-422" y="-446"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book.closed.fill" catalog="system" width="115" height="128"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="powerplug.fill" catalog="system" width="128" height="82"/>
+        <image name="slopesFolder" width="348" height="381"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
