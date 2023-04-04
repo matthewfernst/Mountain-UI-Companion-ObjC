@@ -21,6 +21,7 @@
 		65DE3ED329D947B100B81186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3ED229D947B100B81186 /* main.m */; };
 		65E6AB3329DBC70E0093A1F2 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */; };
 		65E6AB3829DBCCB50093A1F2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3729DBCCB50093A1F2 /* Constants.m */; };
+		65E6AB3E29DBD78B0093A1F2 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3D29DBD78B0093A1F2 /* UIImage+Extensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,8 @@
 		65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
 		65E6AB3529DBCB930093A1F2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		65E6AB3729DBCCB50093A1F2 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		65E6AB3C29DBD7440093A1F2 /* UIImage+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
+		65E6AB3D29DBD78B0093A1F2 /* UIImage+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,8 @@
 			children = (
 				6547AF0929DBC53000D32093 /* UIColor+Extensions.h */,
 				65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */,
+				65E6AB3C29DBD7440093A1F2 /* UIImage+Extensions.h */,
+				65E6AB3D29DBD78B0093A1F2 /* UIImage+Extensions.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 				658D550229DA817200E9C242 /* SlopeConnectionViewController.m in Sources */,
 				658D551A29DB446D00E9C242 /* S3Utils.m in Sources */,
 				65DE3EC829D947B000B81186 /* ViewController.m in Sources */,
+				65E6AB3E29DBD78B0093A1F2 /* UIImage+Extensions.m in Sources */,
 				65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */,
 				6547AF0729DBC3F300D32093 /* LoginViewController.m in Sources */,
 				65DE3ED329D947B100B81186 /* main.m in Sources */,
