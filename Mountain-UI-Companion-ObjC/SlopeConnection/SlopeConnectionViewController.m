@@ -23,7 +23,8 @@
 
 @implementation SlopeConnectionViewController
 
-- (UIImageView *)thumbsUpImageView {
+- (UIImageView *)thumbsUpImageView
+{
     if (!_thumbsUpImageView) {
         _thumbsUpImageView = [[UIImageView alloc] init];
         _thumbsUpImageView.image = [UIImage systemImageNamed:@"hand.thumbsup.fill"];
@@ -32,7 +33,8 @@
     return _thumbsUpImageView;
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self anchorSlopeFilesUploadProgressView];
@@ -41,7 +43,8 @@
     [self showConnectToSlopesView];
 }
 
-- (void)anchorSlopeFilesUploadProgressView {
+- (void)anchorSlopeFilesUploadProgressView
+{
     [self.slopeFilesUploadProgressView setHidden:YES];
     
     self.slopeFilesUploadProgressView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -53,7 +56,8 @@
     ]];
 }
 
-- (void)showConnectToSlopesView {
+- (void)showConnectToSlopesView
+{
     [self.thumbsUpImageView setHidden:YES];
     
     self.documentPicker = [[UIDocumentPickerViewController alloc] initForOpeningContentTypes:@[UTTypeFolder] asCopy:NO];
@@ -64,7 +68,8 @@
     [self.connectSlopesButton addTarget:self action:@selector(selectSlopeFiles) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)setupThumbsUpImageViewAndManualSlopeFilesButton {
+- (void)setupThumbsUpImageViewAndManualSlopeFilesButton
+{
     [self.view addSubview:self.thumbsUpImageView];
     [self.thumbsUpImageView setHidden:YES];
     
@@ -78,19 +83,22 @@
     ]];
 }
 
-- (void)selectSlopeFiles {
+- (void)selectSlopeFiles
+{
     [self presentViewController:self.documentPicker animated:YES completion:NULL];
 }
 
 
 // MARK: - Document Picker
 
-- (BOOL)isSlopesFiles:(NSURL *)fileURL {
+- (BOOL)isSlopesFiles:(NSURL *)fileURL
+{
     return !fileURL.hasDirectoryPath && [fileURL.pathExtension  isEqual: @"slopes"];
 }
 
 
-- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls {
+- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray<NSURL *> *)urls
+{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSURL *url = urls[0];
         

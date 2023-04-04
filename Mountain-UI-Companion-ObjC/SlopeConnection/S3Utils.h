@@ -8,8 +8,6 @@
 #ifndef S3Utils_h
 #define S3Utils_h
 #import <Foundation/Foundation.h>
-#import <AWSCore/AWSCore.h>
-#import <AWSS3/AWSS3.h>
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
@@ -20,11 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)uploadProfilePictureToS3WithId:(NSString *)id picture:(UIImage *)picture completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler;
 
++ (void)uploadDataWithFileKey:(NSString *)fileKey fileData:(NSData *)fileData bucketName:(NSString *)bucketName completionHandler:(nullable void (^)(NSError * _Nullable error))completionHandler;
+
 + (NSString *)getProfilePictureObjectURLWithId:(NSString *)id;
 
 + (NSArray<NSString *> *)getSlopesDataFilesWithId:(NSString *)id;
 
 + (BOOL)isFileUploadedToS3WithId:(NSString *)id file:(NSURL *)file;
+
++ (void)createFileWithKey:(NSString *)key data:(NSData *)data bucketName:(NSString *)bucketName;
 
 @end
 

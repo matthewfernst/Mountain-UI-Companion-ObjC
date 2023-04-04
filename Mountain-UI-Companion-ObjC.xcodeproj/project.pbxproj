@@ -7,14 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6547AF0729DBC3F300D32093 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6547AF0629DBC3F300D32093 /* LoginViewController.m */; };
 		658D550229DA817200E9C242 /* SlopeConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D550129DA817200E9C242 /* SlopeConnectionViewController.m */; };
-		658D550529DB398800E9C242 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550429DB398800E9C242 /* CropViewController */; };
-		658D550729DB398800E9C242 /* TOCropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550629DB398800E9C242 /* TOCropViewController */; };
 		658D550A29DB39A600E9C242 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550929DB39A600E9C242 /* GoogleSignIn */; };
 		658D550C29DB39A700E9C242 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550B29DB39A700E9C242 /* GoogleSignInSwift */; };
-		658D550F29DB3AFA00E9C242 /* AWSClientRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 658D550E29DB3AFA00E9C242 /* AWSClientRuntime */; };
-		658D551129DB3AFA00E9C242 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = 658D551029DB3AFA00E9C242 /* AWSDynamoDB */; };
-		658D551329DB3AFA00E9C242 /* AWSS3 in Frameworks */ = {isa = PBXBuildFile; productRef = 658D551229DB3AFA00E9C242 /* AWSS3 */; };
 		658D551A29DB446D00E9C242 /* S3Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 658D551929DB446D00E9C242 /* S3Utils.m */; };
 		65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3EC129D947B000B81186 /* AppDelegate.m */; };
 		65DE3EC529D947B000B81186 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3EC429D947B000B81186 /* SceneDelegate.m */; };
@@ -23,9 +19,14 @@
 		65DE3ECD29D947B100B81186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DE3ECC29D947B100B81186 /* Assets.xcassets */; };
 		65DE3ED029D947B100B81186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DE3ECE29D947B100B81186 /* LaunchScreen.storyboard */; };
 		65DE3ED329D947B100B81186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65DE3ED229D947B100B81186 /* main.m */; };
+		65E6AB3329DBC70E0093A1F2 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */; };
+		65E6AB3829DBCCB50093A1F2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3729DBCCB50093A1F2 /* Constants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6547AF0529DBC3F300D32093 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6547AF0629DBC3F300D32093 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6547AF0929DBC53000D32093 /* UIColor+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extensions.h"; sourceTree = "<group>"; };
 		658D550029DA817200E9C242 /* SlopeConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlopeConnectionViewController.h; sourceTree = "<group>"; };
 		658D550129DA817200E9C242 /* SlopeConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlopeConnectionViewController.m; sourceTree = "<group>"; };
 		658D551829DB443500E9C242 /* S3Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = S3Utils.h; sourceTree = "<group>"; };
@@ -42,6 +43,9 @@
 		65DE3ECF29D947B100B81186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65DE3ED129D947B100B81186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DE3ED229D947B100B81186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extensions.m"; sourceTree = "<group>"; };
+		65E6AB3529DBCB930093A1F2 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		65E6AB3729DBCCB50093A1F2 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,12 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				658D551329DB3AFA00E9C242 /* AWSS3 in Frameworks */,
-				658D550729DB398800E9C242 /* TOCropViewController in Frameworks */,
-				658D550529DB398800E9C242 /* CropViewController in Frameworks */,
-				658D550F29DB3AFA00E9C242 /* AWSClientRuntime in Frameworks */,
 				658D550A29DB39A600E9C242 /* GoogleSignIn in Frameworks */,
-				658D551129DB3AFA00E9C242 /* AWSDynamoDB in Frameworks */,
 				658D550C29DB39A700E9C242 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +61,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6547AF0829DBC51100D32093 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6547AF0929DBC53000D32093 /* UIColor+Extensions.h */,
+				65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		658D551429DB3B1A00E9C242 /* SlopeConnection */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +100,7 @@
 		65DE3EBF29D947B000B81186 /* Mountain-UI-Companion-ObjC */ = {
 			isa = PBXGroup;
 			children = (
+				65E6AB3629DBCCA10093A1F2 /* Utils */,
 				65DE3EC029D947B000B81186 /* AppDelegate.h */,
 				65DE3EC129D947B000B81186 /* AppDelegate.m */,
 				65DE3EC329D947B000B81186 /* SceneDelegate.h */,
@@ -104,8 +113,20 @@
 				65DE3ECE29D947B100B81186 /* LaunchScreen.storyboard */,
 				65DE3ED129D947B100B81186 /* Info.plist */,
 				65DE3ED229D947B100B81186 /* main.m */,
+				6547AF0529DBC3F300D32093 /* LoginViewController.h */,
+				6547AF0629DBC3F300D32093 /* LoginViewController.m */,
 			);
 			path = "Mountain-UI-Companion-ObjC";
+			sourceTree = "<group>";
+		};
+		65E6AB3629DBCCA10093A1F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				65E6AB3529DBCB930093A1F2 /* Constants.h */,
+				65E6AB3729DBCCB50093A1F2 /* Constants.m */,
+				6547AF0829DBC51100D32093 /* Extensions */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,13 +146,8 @@
 			);
 			name = "Mountain-UI-Companion-ObjC";
 			packageProductDependencies = (
-				658D550429DB398800E9C242 /* CropViewController */,
-				658D550629DB398800E9C242 /* TOCropViewController */,
 				658D550929DB39A600E9C242 /* GoogleSignIn */,
 				658D550B29DB39A700E9C242 /* GoogleSignInSwift */,
-				658D550E29DB3AFA00E9C242 /* AWSClientRuntime */,
-				658D551029DB3AFA00E9C242 /* AWSDynamoDB */,
-				658D551229DB3AFA00E9C242 /* AWSS3 */,
 			);
 			productName = "Mountain-UI-Companion-ObjC";
 			productReference = 65DE3EBD29D947B000B81186 /* Mountain-UI-Companion-ObjC.app */;
@@ -196,8 +212,11 @@
 				658D551A29DB446D00E9C242 /* S3Utils.m in Sources */,
 				65DE3EC829D947B000B81186 /* ViewController.m in Sources */,
 				65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */,
+				6547AF0729DBC3F300D32093 /* LoginViewController.m in Sources */,
 				65DE3ED329D947B100B81186 /* main.m in Sources */,
 				65DE3EC529D947B000B81186 /* SceneDelegate.m in Sources */,
+				65E6AB3329DBC70E0093A1F2 /* UIColor+Extensions.m in Sources */,
+				65E6AB3829DBCCB50093A1F2 /* Constants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,16 +461,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		658D550429DB398800E9C242 /* CropViewController */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
-			productName = CropViewController;
-		};
-		658D550629DB398800E9C242 /* TOCropViewController */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658D550329DB398800E9C242 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
-			productName = TOCropViewController;
-		};
 		658D550929DB39A600E9C242 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
@@ -461,21 +470,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 658D550829DB39A600E9C242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
-		};
-		658D550E29DB3AFA00E9C242 /* AWSClientRuntime */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
-			productName = AWSClientRuntime;
-		};
-		658D551029DB3AFA00E9C242 /* AWSDynamoDB */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
-			productName = AWSDynamoDB;
-		};
-		658D551229DB3AFA00E9C242 /* AWSS3 */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 658D550D29DB3AFA00E9C242 /* XCRemoteSwiftPackageReference "aws-sdk-swift" */;
-			productName = AWSS3;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

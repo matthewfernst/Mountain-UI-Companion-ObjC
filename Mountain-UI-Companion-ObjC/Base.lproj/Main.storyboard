@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Srd-Cv-tBr">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Kf-7M-bvp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -57,7 +57,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="T5v-oH-1Z6">
                                 <rect key="frame" x="16" y="132" width="361" height="180"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">The Mountain-UI Companion App works together with the Slopes App by Breakpoint Studios. Slopes is able to track a skier or snowboarder while they shred it down the mountain. Slopes can track things such as average speed, total vertical feet, and more. The Mountain-UI Companion App, uses the data stored by Slopes and sends it to your Mountain-UI display. In order to get started, tap the "Connect Slopes" button and select the Slopes folder in your Files directory. The Slopes directory is shown below for reference.</mutableString>
+                                <string key="text">The Mountain-UI Companion App works together with the Slopes App by Breakpoint Studios. Slopes is able to track a skier or snowboarder while they shred it down the mountain. Slopes can track things such as average speed, total vertical feet, and more. The Mountain-UI Companion App, uses the data stored by Slopes and sends it to your Mountain-UI display. In order to get started, tap the "Connect Slopes" button and select the Slopes folder in your Files directory. The Slopes directory is shown below for reference.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -128,17 +128,80 @@
             </objects>
             <point key="canvasLocation" x="-422" y="-446"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="TSY-9e-d68">
+            <objects>
+                <viewController id="1Kf-7M-bvp" customClass="LoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDB-bt-c0X">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vecteezy_ski-lift-and-winter-activities-concept-positive-young_13489041" translatesAutoresizingMaskIntoConstraints="NO" id="iXl-OH-Y1Y">
+                                <rect key="frame" x="0.0" y="-18" width="439" height="625"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="625" id="v2b-Jf-q8T"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mountain-UI Companion App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCS-ef-241">
+                                <rect key="frame" x="16" y="617" width="361" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UdA-WL-3NI">
+                                <rect key="frame" x="16" y="648.33333333333337" width="361" height="148.66666666666663"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-3N-9RD">
+                                <rect key="frame" x="96" y="805" width="201" height="28"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="What is Mountain-UI? Learn More">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="11"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cdC-ss-7hS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Us-3N-9RD" firstAttribute="leading" secondItem="cdC-ss-7hS" secondAttribute="leading" constant="96" id="7id-jx-gxZ"/>
+                            <constraint firstItem="cdC-ss-7hS" firstAttribute="trailing" secondItem="iXl-OH-Y1Y" secondAttribute="trailing" constant="-46" id="9l6-S2-9QG"/>
+                            <constraint firstItem="VCS-ef-241" firstAttribute="leading" secondItem="cdC-ss-7hS" secondAttribute="leading" constant="16" id="CRe-Fz-FWG"/>
+                            <constraint firstItem="VCS-ef-241" firstAttribute="firstBaseline" secondItem="iXl-OH-Y1Y" secondAttribute="baseline" constant="33.666666666666629" id="CpQ-yo-EV5"/>
+                            <constraint firstItem="iXl-OH-Y1Y" firstAttribute="leading" secondItem="cdC-ss-7hS" secondAttribute="leading" id="FqI-A7-kSV"/>
+                            <constraint firstItem="8Us-3N-9RD" firstAttribute="bottom" secondItem="cdC-ss-7hS" secondAttribute="bottom" constant="15" id="JjN-W3-8Oi"/>
+                            <constraint firstItem="cdC-ss-7hS" firstAttribute="trailing" secondItem="8Us-3N-9RD" secondAttribute="trailing" constant="96" id="RIn-CH-Jig"/>
+                            <constraint firstItem="8Us-3N-9RD" firstAttribute="firstBaseline" secondItem="UdA-WL-3NI" secondAttribute="baseline" constant="25.333333333333336" symbolType="layoutAnchor" id="VpW-sU-N4Z"/>
+                            <constraint firstItem="UdA-WL-3NI" firstAttribute="centerX" secondItem="cdC-ss-7hS" secondAttribute="centerX" id="bJC-ml-GBJ"/>
+                            <constraint firstItem="UdA-WL-3NI" firstAttribute="leading" secondItem="VCS-ef-241" secondAttribute="leading" id="dvs-Kw-T8M"/>
+                            <constraint firstItem="cdC-ss-7hS" firstAttribute="trailing" secondItem="VCS-ef-241" secondAttribute="trailing" constant="16" id="hgR-mV-WGs"/>
+                            <constraint firstItem="iXl-OH-Y1Y" firstAttribute="top" secondItem="cdC-ss-7hS" secondAttribute="top" constant="-77" id="oeJ-AN-AvS"/>
+                            <constraint firstItem="UdA-WL-3NI" firstAttribute="top" secondItem="VCS-ef-241" secondAttribute="bottom" constant="1.3300000000000001" id="zmy-nu-7lr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="invisibleViewForCenteringSignInButtons" destination="UdA-WL-3NI" id="61Q-9D-H9U"/>
+                        <outlet property="learnMoreUIButton" destination="8Us-3N-9RD" id="raJ-yb-5bS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOU-9M-Wss" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-385.49618320610688" y="-1123.2394366197184"/>
+        </scene>
     </scenes>
     <resources>
         <image name="book.closed.fill" catalog="system" width="115" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="powerplug.fill" catalog="system" width="128" height="82"/>
         <image name="slopesFolder" width="348" height="381"/>
+        <image name="vecteezy_ski-lift-and-winter-activities-concept-positive-young_13489041" width="1920" height="1280"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
