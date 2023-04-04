@@ -47,11 +47,12 @@
     }
 }
 
+// MARK: - Sign in Buttons
 - (void)setupSignInWithAppleUIButton
 {
     ASAuthorizationAppleIDButton *signInWithAppleButton = [[ASAuthorizationAppleIDButton alloc] initWithAuthorizationButtonType:ASAuthorizationAppleIDButtonTypeSignIn authorizationButtonStyle:ASAuthorizationAppleIDButtonStyleWhite];
     
-    // Add target
+    [signInWithAppleButton addTarget:self action:@selector(goToMainApp) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:signInWithAppleButton];
     
@@ -94,6 +95,8 @@
 {
     UIButton *signInWithGoogleButton = [self getSignInWithGoogleUIButton];
     
+    [signInWithGoogleButton addTarget:self action:@selector(goToMainApp) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:signInWithGoogleButton];
     
     signInWithGoogleButton.translatesAutoresizingMaskIntoConstraints = NO;
@@ -106,5 +109,14 @@
     ]];
 }
 
+- (void)goToMainApp
+{
+    TabBarViewController *tabBarController = [self.storyboard instantiateViewControllerWithIdentifier:TabBarViewController.identifier];
+    
+    tabBarController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    tabBarController.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    [self presentViewController:tabBarController animated:YES completion:nil];
+}
 
 @end

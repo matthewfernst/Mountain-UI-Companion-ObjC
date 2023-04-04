@@ -22,6 +22,7 @@
 		65E6AB3329DBC70E0093A1F2 /* UIColor+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3229DBC70E0093A1F2 /* UIColor+Extensions.m */; };
 		65E6AB3829DBCCB50093A1F2 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3729DBCCB50093A1F2 /* Constants.m */; };
 		65E6AB3E29DBD78B0093A1F2 /* UIImage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB3D29DBD78B0093A1F2 /* UIImage+Extensions.m */; };
+		65E6AB4129DBDC3A0093A1F2 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E6AB4029DBDC3A0093A1F2 /* TabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,8 @@
 		65E6AB3729DBCCB50093A1F2 /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		65E6AB3C29DBD7440093A1F2 /* UIImage+Extensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extensions.h"; sourceTree = "<group>"; };
 		65E6AB3D29DBD78B0093A1F2 /* UIImage+Extensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extensions.m"; sourceTree = "<group>"; };
+		65E6AB3F29DBDC3A0093A1F2 /* TabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		65E6AB4029DBDC3A0093A1F2 /* TabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				65DE3ED229D947B100B81186 /* main.m */,
 				6547AF0529DBC3F300D32093 /* LoginViewController.h */,
 				6547AF0629DBC3F300D32093 /* LoginViewController.m */,
+				65E6AB3F29DBDC3A0093A1F2 /* TabBarViewController.h */,
+				65E6AB4029DBDC3A0093A1F2 /* TabBarViewController.m */,
 			);
 			path = "Mountain-UI-Companion-ObjC";
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				65DE3EC229D947B000B81186 /* AppDelegate.m in Sources */,
 				6547AF0729DBC3F300D32093 /* LoginViewController.m in Sources */,
 				65DE3ED329D947B100B81186 /* main.m in Sources */,
+				65E6AB4129DBDC3A0093A1F2 /* TabBarViewController.m in Sources */,
 				65DE3EC529D947B000B81186 /* SceneDelegate.m in Sources */,
 				65E6AB3329DBC70E0093A1F2 /* UIColor+Extensions.m in Sources */,
 				65E6AB3829DBCCB50093A1F2 /* Constants.m in Sources */,
